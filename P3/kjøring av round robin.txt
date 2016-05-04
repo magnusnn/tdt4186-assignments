@@ -1,0 +1,44 @@
+Kommentar:
+Forsøkte å minske tiden cpuen sto ledig, altså at det hele tiden kom inn data og la seg i køen til cpu-en slik at
+den står minst mulig ledig. Forsøkte å sette ned prosessortiden for å få hentet ut fra memory-queue, samt å se på average IO tid.
+Forsøkte også å ikke sende inn for mange data samtidig, slik at ikke memoryqueuen blir for full og kanskje misser noen 
+prosesser.
+
+
+
+
+
+
+Simulating.....done.
+
+Simulation statistics:
+
+Number of completed processes:                                          98
+Number of created processes:                                            116
+Number of (forced) process switches:                                    746
+Number of processed I/O operations:                                     753
+Average throughput (processes per second):                              0.196
+
+Total CPU-time spent processing data:                                   353096ms
+Fraction of CPU time spent processing data:                             70.6192%
+Total CPU time spent waiting for something:                             146904ms
+Fraction of CPU time spent waiting:                                     29.380802%
+
+Largest occuring memory queue length:                                   14
+Average memory queue length:                                            6.782056
+Largest occuring cpu queue length:                                      7
+Average cpu queue length:                                               3.15182
+Largest occuring I/O queue length:                                      5
+Average I/O queue length:                                               0.403286
+Average # of times a process has been placed in cpu queue:              7.37069
+Average # of times a process has been placed in I/O queue:              7.4913793
+
+Average # of times a process has been placed in memory queue:           1
+Average time spent waiting for memory per process:                      29740 ms
+
+Average time spent in system per process:                               1603122.5ms
+Average time spent waiting for memory per process:                      25125.7ms
+Average time spent waiting for cpu per process:                         284240.88ms
+Average time spent processing per process:                              46080.42ms
+Average time spent waiting for I/O per process:                         7064404.0ms
+Average time spent in I/O per process:                                  8927.991ms
